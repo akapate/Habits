@@ -12,7 +12,13 @@ struct ContributionGrid: View {
     private let itemHeight: CGFloat = 15
     
     var body: some View {
-        let rows = Array(repeating: GridItem(.fixed(15), spacing: 4), count: 7)
+        let rows = Array(
+            repeating: GridItem(
+                .fixed(15),
+                spacing: 4
+            ),
+            count: 7
+        )
         LazyHGrid(
             rows: rows,
             spacing: spacing
